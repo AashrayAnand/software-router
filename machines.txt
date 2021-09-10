@@ -1,0 +1,7 @@
+greenA
+greenB
+blueA
+blueB
+redA
+redB
+router
