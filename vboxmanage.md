@@ -4,6 +4,8 @@ SHOW VM INFO: vboxmanage showvminfo name
 
 CREATE AND REGISTER VM: vboxmanage createvm --name [MACHINE_NAME] --ostype [Os type, ex: "Ubuntu_64"] --register
 
+DELETE AND UNREGISTER VM: vboxmanage unregistervm [name|uuid] --delete
+
 MODIFY VM: vboxmanage modifyvm "name" --setting value
 
 CHANGE VM MEMORY: vboxmanage modifyvm "name" --memory [MEM_IN_MB]
