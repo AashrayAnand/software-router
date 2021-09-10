@@ -1,0 +1,4 @@
+# Notes
+
+**NAT**: Network address translation. Process of mapping one IP address space to another, by modifying the IP address and ports in frames being sent through a device which executes NAT. often done by a router, e.g. router has some IP address 123.8.8.4. For each device which is in this private network, any packets it passes through router to public network will cause router (NAT device) to track private device in NAT translation table, mapping its IP address and port to a "public IP address" and
+port (some port on the router). Then, the router IP alone can handle all traffic from the public network to any devices on the private network, by mapping the public IP and port of an inbound request to the corresponding private IP and port (see visual here)[https://en.wikipedia.org/wiki/Network_address_translation#/media/File:Network_Address_Translation_(file2).jpg]
