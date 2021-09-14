@@ -17,4 +17,4 @@ do
 done
 
 # delete VM files base path
-rm -r ./VM_FILES
+rm -rf ./VM_FILES
