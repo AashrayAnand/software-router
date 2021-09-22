@@ -1,6 +1,13 @@
+done
+====
 read about NAT
 read about DHCP
 find OSS DHCP Server
 try to ping across internal networks
 try to ping from host to vm and vice versa
 set up ubuntu ISO
+
+to-do
+=====
+configure router DNS server (recursive)
+move DNS and DHCP server to one of private switches
