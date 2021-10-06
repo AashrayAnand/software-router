@@ -1,0 +1,1 @@
+remove ipv6 records from DNS root server file: sudo sed -i '/AAAA/d' /usr/share/dns/root.hints 

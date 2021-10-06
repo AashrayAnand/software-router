@@ -1,0 +1,36 @@
+acl "goodclients" {
+	192.168.0.0/24;
+	192.168.1.0/24;
+	192.168.2.0/24;
+	10.135.64.0/22;
+	localhost;
+	localnets;
+};
+
+options {
+	directory "/var/cache/bind";
+
+	// If there is a firewall between you and nameservers you want
+	// to talk to, you may need to fix the firewall to allow multiple
+	// ports to talk.  See http://www.kb.cert.org/vuls/id/800113
+
+	// If your ISP provided one or more IP addresses for stable 
+	// nameservers, you probably want to use them as forwarders.  
+	// Uncomment the following block, and insert the addresses replacing 
+	// the all-0's placeholder.
+
+	recursion yes; # enable recursive queries
+	allow-query { goodclients; }; # only allow recursive queries from good clients
+
+	listen-on { 192.168.0.0/16; # listen across all 3 private networks
+		    10.135.64.0/22; # listen on outgoing connection network
+		  };
+
+	forwarders {
+		10.50.10.50; # forward to name server configured by router host machine
+	};
+
+	dnssec-validation auto;
+
+	auth-nxdomain no;
+};

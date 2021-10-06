@@ -1,0 +1,16 @@
+;
+; BIND reverse data file for bluenet
+;
+$TTL	604800
+@	IN	SOA	ns1.rednet.com. router.rednet.com. (
+			      3		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+; name servers - NS records
+	IN	NS	ns1.rednet.com.
+; PTR records
+1	IN	PTR	ns1.rednet.com.  ; 192.168.1.1
+15	IN	PTR	a.rednet.com.	 ; 192.168.1.5
+10	IN	PTR	b.rednet.com.	 ; 192.168.1.10

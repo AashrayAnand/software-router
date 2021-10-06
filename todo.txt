@@ -6,6 +6,8 @@ find OSS DHCP Server
 try to ping across internal networks
 try to ping from host to vm and vice versa
 set up ubuntu ISO
+set up authoritative zones for private networks (.green/blue/red domain suffixes)
+SNAT and port forwarding to allow communication between private networks and over internet
 
 to-do
 =====
