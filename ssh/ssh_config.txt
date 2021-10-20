@@ -1,0 +1,16 @@
+Include /etc/ssh/sshd_config.d/*.conf
+Port 22
+Port 2222 # red a
+Port 2223 # red b
+Port 2224 # blue a
+Port 2225 # blue b
+Port 2226 # blue c
+Port 2227 # green a
+Port 2228 # green b
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem sftp	/usr/lib/openssh/sftp-server
+PasswordAuthentication yes
