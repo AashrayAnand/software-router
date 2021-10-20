@@ -1,0 +1,8 @@
+ssh router@10.135.66.56
+ssh reda@10.135.66.56 -p 2222
+ssh redb@10.135.66.56 -p 2223
+ssh bluea@10.135.66.56 -p 2224
+ssh blueb@10.135.66.56 -p 2225
+ssh bluec@10.135.66.56 -p 2226
+ssh greena@10.135.66.56 -p 2227
+ssh greenb@10.135.66.56 -p 2228
